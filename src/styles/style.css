@@ -14,7 +14,7 @@ body{
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: radial-gradient(rgb(2, 11, 43),rgb(2, 9, 67));
+  background-image: radial-gradient(rgb(3, 15, 59),rgb(1, 6, 45));
 }
 
 body::-webkit-scrollbar{
@@ -35,13 +35,16 @@ body::-webkit-scrollbar{
   top: 100px;
   left: 100px;
   transform-style: preserve-3d;
-  animation: animate 7s infinite;
+  animation: animate 10s infinite;
   
 }
 
 @keyframes animate{
   0%{
     transform: rotateX(90deg) rotateY(-90deg);
+  }
+  10%{
+    transform: rotateX(0) rotateY(-180deg);
   }
   25%{
     transform: rotateX(-180deg) rotateY(-180deg);
