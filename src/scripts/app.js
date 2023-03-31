@@ -1,12 +1,25 @@
 
 // let cards = document.querySelectorAll(".card");
-// let color;
+
+// let positions = ["right", "left", "bottom", "top"];
+// let transform = ["translateZ"]
+
+// cards.forEach((card) => {
+   
+//   // positions.forEach(d=>card.style[d].length >0 ? :'' )
+//   positions.forEach(d => console.log(card.style.bottom) )
+
+// })
+
 // setInterval(() => {
-//   color = randomColor()
-//   cards.forEach((card) => {
-//    card.style.backgroundColor=color
-//   })
+  
+
 // }, 100);
+
+
+
+
+
 
 
 // function randomColor() {

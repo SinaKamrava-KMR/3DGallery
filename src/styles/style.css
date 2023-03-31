@@ -13,7 +13,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: radial-gradient(rgb(4, 55, 94),rgb(35, 58, 227));
+  position: relative;
+  background-image: radial-gradient(rgb(2, 11, 43),rgb(2, 9, 67));
 }
 
 body::-webkit-scrollbar{
@@ -34,25 +35,25 @@ body::-webkit-scrollbar{
   top: 100px;
   left: 100px;
   transform-style: preserve-3d;
-  animation: animate 5s infinite;
+  animation: animate 7s infinite;
   
 }
 
 @keyframes animate{
   0%{
-    transform: rotateX(45deg) rotateY(-45deg);
+    transform: rotateX(90deg) rotateY(-90deg);
   }
   25%{
-    transform: rotateX(-45deg) rotateY(-45deg);
+    transform: rotateX(-180deg) rotateY(-180deg);
   }
   50%{
-    transform: rotateX(45deg) rotateY(45deg);
+    transform: rotateX(180deg) rotateY(90deg);
   }
   75%{
-    transform: rotateX(-45deg) rotateY(45deg);
+    transform: rotateX(-90deg) rotateY(90deg);
   }
   100%{
-    transform: rotateX(45deg) rotateY(-45deg);
+    transform: rotateX(90deg) rotateY(-90deg);
 
   }
 }
@@ -71,28 +72,44 @@ body::-webkit-scrollbar{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #front{
+  background-image: url("/src/img/b1.jpg");
   transform: translateZ(125px);
+  z-index: -300;
 }
 #back{
+  background-image: url("/src/img/b2.jpg");
   transform: translateZ(-125px);
+  z-index: -100;
 }
 
 #left{
+  background-image: url("/src/img/b3.jpg");
   right: 150px;
   transform: rotateY(-90deg);
+  z-index: -300;
 }
 #right{
   left: 150px;
+  background-image: url("/src/img/b4.jpg");
   transform: rotateY(90deg);
+  z-index: -300;
 }
 #top{
   bottom: 150px;
+  background-image: url("/src/img/n1.jpg");
   transform: rotateX(90deg);
+  z-index: -300;
 }
 #bottom{
   top: 150px;
+  background-image: url("/src/img/n6.jpg");
   transform: rotateX(-90deg);
+  z-index: -300;
 }
+
+
